@@ -1,0 +1,12 @@
+[Unit]
+Description=runBot
+
+[Service]
+Type=idle
+ExecStart=/home/fosemberg/scripts/bot.py
+Restart=always
+User=fosemberg
+RestartSec=3s
+
+[Install]
+WantedBy=multi-user.target
